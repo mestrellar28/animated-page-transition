@@ -1,0 +1,13 @@
+{
+   "presets": [
+      [
+         "@babel/preset-env",
+         {
+            "corejs": 3.15,
+            "useBuiltIns": "usage",
+            "targets": ">0.25%, not dead, not ie 11",
+            "debug": true
+         }
+      ]
+   ]
+}

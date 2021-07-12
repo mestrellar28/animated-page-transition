@@ -1,0 +1,24 @@
+// Responsive
+@mixin breakpoint($point) {
+   @if $point==desktop {
+      @media (min-width: 80em) {
+         @content;
+      }
+   } @else if $point==laptop {
+      @media (min-width: 65em) {
+         @content;
+      }
+   } @else if $point==tablet {
+      @media (min-width: 60em) {
+         @content;
+      }
+   } @else if $point==ipad {
+      @media (min-width: 45em) {
+         @content;
+      }
+   } @else if $point==mobile {
+      @media (min-width: 35em) {
+         @content;
+      }
+   }
+}
